@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .icon-bar a {
+            float: left;
+            width: 10%;
+            text-align: center;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            color: black;
+            font-size: 25px;
+        }
+
+        .icon-bar a:hover {
+            background-color: whitesmoke;
+        }
+
+        .comment-wrapper .panel-body {
+            max-height: 650px;
+            overflow: auto;
+        }
+
+        .comment-wrapper .media-list .media img {
+            width: 64px;
+            height: 64px;
+            border: 2px solid #e5e7e8;
+        }
+
+        .comment-wrapper .media-list .media {
+            border-bottom: 1px dashed #efefef;
+            margin-bottom: 25px;
+        }
+
+        .same_height {
+
+            height: 100vh !important;
+
+
+
+        }
+
+        .style_b1 {
+
+            background-color: #132639;
+        }
+
+        .f1 {
+
+            background-color: #cccccc;
+
+            height: 80px;
+        }
+
+        .f2 {
+            border-right: 2px solid black;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .f3 {
+
+            height: 80px;
+            background-color: white;
+
+            width: 100%;
+
+        }
+
+        .f4 {
+            width: 100%;
+        }
+
+        .icon-bar11 {
+            width: 90px;
+            margin: 0 auto;
+
+        }
+
+        .icon-bar11 a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 36px;
+        }
+
+        .icon-bar11 a:hover {
+            background-color: #0077b3;
+        }
+
+        .btn121 {
+            margin-top: 13px;
+            margin-right: 20px;
+            ;
+            background-color: grey;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            float: right;
+        }
+
+
+        .btn121:hover {
+            background-color: #8585ad;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <div class="row">
+
+        <div class="col-1 same_height style_b1">
+
+            <div class="row" style="">
+
+                <div class="icon-bar11">
+                    <a href="#"><i class="fa fa-archive"></i></a>
+                    <a href="#"><i class="fa fa-archive"></i></a>
+                    <a href="#"><i class="fa fa-star-o"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="row" style="position:absolute;bottom: 0px">
+
+                <div class="col-sm" style="margin-left: 10px;">
+                    <a href="#" class="pull-left">
+                        <img src="css/dp.png" alt="" class="img-circle" width="75" height="75" >
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-11 same_height">
+
+            <div class="row">
+
+                <div class="col-12 f1">
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="icon-bar">
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-folder-open"></i></a>
+                                <a href="#"><i class="fa fa-trash"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="s128">
+                                <form>
+                                    <div class="inner-form">
+                                        <div class="row">
+                                            <div class="input-field first" id="first">
+
+                                                <input class="input" id="inputFocus" type="text" placeholder="" />
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-12">
+
+                    <div class="row">
+
+
+                        <div class="col-4 f2">
+
+
+                            <ul class="media-list">
+
+                                <li class="media" onclick="fetch_usr1()">
+
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <a href="#" class="pull-left">
+                                                <img src="https://bootdey.com/img/Content/user_1.jpg" alt=""
+                                                    class="img-circle">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm">
+                                            <span style="white-space: nowrap ;">George Washington</span>
+                                            <br>
+                                            <span style="white-space: nowrap ;font-size:10px;">now we are offering
+                                                graphic </span>
+                                        </div>
+                                        <div class="col-sm">
+                                            12:00 pm
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-sm">
+                                            <a href="#"><i id="us1" class="fa fa-star" style="color:#a3a3c2"></i></a>
+                                            <span style="white-space: nowrap ;font-size:8px;">By applying visual
+                                                hierarchy and page layout techniques</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li class="media" onclick="fetch_usr2()">
+
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <a href="#" class="pull-left">
+                                                <img src="https://bootdey.com/img/Content/user_2.jpg" alt=""
+                                                    class="img-circle">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm">
+
+                                            <span style="white-space: nowrap ;">Stephanie White</span>
+
+                                            <br>
+                                            <span style="white-space: nowrap ;font-size:10px;">foodpanda shops is an
+                                                online grocery </span>
+                                        </div>
+                                        <div class="col-sm">
+                                            15:35
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-sm">
+                                            <a href="#"><i id="us2" class="fa fa-star" style="color:#a3a3c2"></i></a>
+                                            <span style="white-space: nowrap ;font-size:8px;">products from a variety of
+                                                your favorite stores on one platform</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li class="media" onclick="fetch_usr3()">
+
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <a href="#" class="pull-left">
+                                                <img src="https://bootdey.com/img/Content/user_3.jpg" alt=""
+                                                    class="img-circle">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm">
+
+                                            <span style="white-space: nowrap ;">David Brown</span>
+
+                                            <br>
+                                            <span style="white-space: nowrap ;font-size:10px;">We combed our catalog and
+                                                found courses </span>
+                                        </div>
+                                        <div class="col-sm">
+                                            18:22
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-sm">
+                                            <a href="#"><i id="us3" class="fa fa-star" style="color:#a3a3c2"></i></a>
+                                            <span style="white-space: nowrap ;font-size:8px;">start learning something
+                                                new today!</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+
+                        <div class="col-8">
+
+
+
+                            <div class="row">
+
+                                <div class="col-12 f3">
+
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h4 id="mail_hd" style="margin-top: 10px;">This the title of the mail shown
+                                                in the west side</h2>
+                                        </div>
+                                        <div class="col-2">
+                                            <button class="btn121">Trash <i class="fa fa-angle-down"></i> </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+
+                                        <div class="col-10">
+                                            <a href="#"><i class="fa fa-star"></i></a><span id='sender'></span> to <span
+                                                style="color: blue;"> me</span>
+                                        </div>
+                                        <div class="col-2">
+                                            <span id="date"></span><span id="time"></span><a href="#"><i
+                                                    class="fa fa-info-circle"></i></a> <a href="#"><i
+                                                    class="fa fa-envelope"></i></a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <img id="dp_img" src="" alt="Italian Trulli" width="400" height="200" />
+
+                                    </div>
+
+                                    <div class="row" style="margin-bottom: 30px;margin-top: 30px;">
+
+                                        <div class="col-sm">
+                                            <span id="snd11"></span>
+                                        </div>
+                                        <div class="col-sm">
+                                            <span id="mid11"></span>
+                                        </div>
+                                        <div class="col-sm">
+                                            <a href="#">View in the browser</a>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <span id="msg_bdy"></span>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+
+        function codeAddress() {
+            var inputFocus = document.getElementById('inputFocus');
+            inputFocus.classList.add('isFocus');
+        }
+        window.onload = codeAddress;
+        var btnDelete = document.getElementById('clear');
+        var inputFocus = document.getElementById('inputFocus');
+        //- btnDelete.on('click', function(e) {
+        //-   e.preventDefault();
+        //-   inputFocus.classList.add('isFocus')
+        //- })
+        //- inputFocus.addEventListener('click', function() {
+        //-   this.classList.add('isFocus')
+        //- })
+        btnDelete.addEventListener('click', function (e) {
+            e.preventDefault();
+            inputFocus.value = ''
+        })
+        document.addEventListener('click', function (e) {
+            if (document.getElementById('first').contains(e.target)) {
+                inputFocus.classList.add('isFocus')
+            }
+            else {
+                // Clicked outside the box
+                //inputFocus.classList.remove('isFocus')
+
+                inputFocus.classList.add('isFocus')
+            }
+        });
+
+
+
+        function fetch_usr1() {
+
+            document.getElementById("us1").style.color = "#ffff00";
+
+            document.getElementById("us2").style.color = "#a3a3c2";
+
+            document.getElementById("us3").style.color = "#a3a3c2";
+
+            document.getElementById('mail_hd').innerHTML = "HURRY!! 70% off on graphic designing course";
+
+            document.getElementById("dp_img").src = "https://bootdey.com/img/Content/user_1.jpg";
+
+            document.getElementById('sender').innerHTML = '  George Washington';
+
+            document.getElementById('snd11').innerHTML = '  George Washington';
+
+            document.getElementById('mid11').innerHTML = '  Offering Graphic Design Course';
+
+            document.getElementById('msg_bdy').innerHTML = 'now we are offering graphic designing course in a very minimum cost. Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users’ specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.';
+        }
+
+        function fetch_usr2() {
+
+            document.getElementById("us1").style.color = "#a3a3c2";
+
+            document.getElementById("us2").style.color = "#ffff00";
+
+            document.getElementById("us3").style.color = "#a3a3c2";
+
+            document.getElementById('mail_hd').innerHTML = "DONT MISS OUT!! 20% off on all orders from FOODPANDA.";
+
+            document.getElementById("dp_img").src = "https://bootdey.com/img/Content/user_2.jpg";
+
+            document.getElementById('sender').innerHTML = '  Stephanie White';
+
+            document.getElementById('snd11').innerHTML = '  Stephanie White';
+
+            document.getElementById('mid11').innerHTML = '  Shop With FoodPanda Mart';
+
+            document.getElementById('msg_bdy').innerHTML = 'foodpanda shops is an online grocery delivery service in Bangladesh. It enables you to order numerous products from a variety of your favorite stores on one platform!';
+
+        }
+
+        function fetch_usr3() {
+
+            document.getElementById("us1").style.color = "#a3a3c2";
+
+            document.getElementById("us2").style.color = "#a3a3c2";
+
+            document.getElementById("us3").style.color = "#ffff00";
+
+            document.getElementById('mail_hd').innerHTML = "Oferring Discount On you're Courses Of Intereset";
+
+            document.getElementById("dp_img").src = "https://bootdey.com/img/Content/user_3.jpg";
+
+            document.getElementById('sender').innerHTML = '  David Brown';
+
+            document.getElementById('snd11').innerHTML = '  David Brown';
+
+            document.getElementById('mid11').innerHTML = '  Discount On Courses';
+
+            document.getElementById('msg_bdy').innerHTML = 'We combed our catalog and found courses that we think match your interests. Browse our recommendations below, and start learning something new today!';
+        }
+
+    </script>
+
+
+
+</body>
+
+
+</html>
